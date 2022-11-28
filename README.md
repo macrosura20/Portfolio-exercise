@@ -1,2 +1,2 @@
-# KC---Portfolio-exercise
+# Portfolio-exercise
 Ejercicio de portfolio 
