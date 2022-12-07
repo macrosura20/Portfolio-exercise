@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top">
+            <h1>Laura Gabriela Fernández Zambrano</h1>
+            <nav class="nav">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact_form">contact</a></li>
+            </nav>
+        </div>
+        <div class="my_info">
+            <picture>
+                <img
+                    sizes="(max-width: 1280px) 100vw, 1280px"
+                    srcset="
+                    ../Images/teclado_gu4or4_c_scale,w_200.jpg 200w,
+                    ../Images/teclado_gu4or4_c_scale,w_757.jpg 757w,
+                    ../Images/teclado_gu4or4_c_scale,w_1198.jpg 1198w,
+                    ../Images/teclado_gu4or4_c_scale,w_1280.jpg 1280w"
+                    src="../Images/teclado_gu4or4_c_scale,w_1280.jpg"
+                    title="Image Profile"
+                    alt="profile icon">
+            </picture>
+            <div class="text_info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quasi placeat minima dolor repudiandae voluptatem, voluptatibus quod. Deleniti praesentium, ipsa pariatur quidem non similique voluptatem voluptatibus, suscipit voluptate, debitis aliquam?</p>
+            </div>
+        </div>
+    </header>
+   <main>
+        <section id="projects">
+            <article>
+                <header>
+                    <h2>Project 1</h2>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempore, doloribus voluptatibus illo libero
+            </article>
+            <article>
+                <header>
+                    <h2>Project 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus iusto facilis, qui repellat.
+                    </p>
+                </header>
+            </article>
+            <article>
+                <header>
+                    <h2>Project 3</h2>
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aut delectus impedit obcaecati ut. 
+                    </p>
+                </header>
+            </article>
+        </section>
+        <section id="skills">
+            <header>
+                <h2>Skills</h2>
+            </header>
+        </section>
+        <section id="contact_form">
+            <h2>Contact Form</h2>
+            <form 
+            action="registro-completado.html"
+            method="post"
+            >
+                <div>
+                    <input name="Name" id="name" type="text" placeholder="Name" required>
+                    <input name="LastName" id="lastName" type="text" placeholder="Last Name" required>
+                    <input name="Email" id="mail" type="email" placeholder="email" required>
+                    <input name="Phone" id="phone" type="tel" placeholder="Phone" pattern="[0-9]{9}" required>
+                </div>
+                <div>
+                    <fieldset id="form_conocer">
+                        <legend>¿Como me conociste?</legend>
+                        <input type="radio" name="conocer" id="uni" value="universidad" checked>
+                        <label for="uni">Universidad</label>
+                        <input type="radio" name="conocer" id="kc" value="keepcoding">
+                        <label for="kc">Keepcoding kick-off</label>
+                        <input type="radio" name="conocer" id="cole" value="colegio">
+                        <label for="cole">Colegio</label>
+                        <input type="radio" name="colegio" id="git" value="github">
+                        <label for="git">En Github</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <input name="github" id="github" type="text" placeholder="Github Log" pattern="^@[^\s]+">
+                </div>
+                <div>
+                    <label for="descripcion"></label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" required maxlength="180"></textarea>
+                </div>
+                <div>
+                    <button>Send</button>
+                </div>
+            </form>
+        </section>
+   </main>
+   <footer class="footer">
+        <div>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer noopener">youtube</a>
+            <a href="https://twitter.com/realDonaldTrump" target="_blank" rel="noreferrer noopener">twitter</a>
+        </div>
+   </footer>
+</body>
+</html>
