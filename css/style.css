@@ -49,75 +49,19 @@
 
 /*Skills*/
 
-/*Contact Form*/
-/**.container_contact_form{
-    padding: 20px 10px;
-}**/
-.container_contact_form .form_profile{
-    display: flex;
-    flex-wrap: wrap;
-}
-.container_contact_form .header_contact{
-    font-size: 1.5em;
-    text-decoration-line: underline;
-    padding: 10px;
-}
-/*Form Profile*/
-.container_contact_form .form_profile input{
-    margin:10px 10px;
-}
-
-/*Input radio*/
-.form_question{
-    padding: 20px 10px;
-}
-
-.form_question .container_radio_selection{
-    display: flex;
-    flex-direction: column;
-}
-
-.container_radio_selection .radio_selection{
-    padding: 15px 0 5px 0;
-}
-
-/*Github*/
-.githubLog{
-    padding: 0px 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.githubLog input{
-    margin-top: 10px;
-    width: 250px;
-}
-
-/*Description*/
-.description{
-    padding: 10px 20px 0 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.description textarea{
-    margin-top: 10px;
-    /*max-width: 250px;*/
-}
-
-/*Button Send*/
-.button_send {
-    padding: 10px 10px;
-}
-
-.button_send button{
-    padding: 5px 15px;
-}
-
 /*Footer*/
 .footer{
-    padding: 10px;
+    padding: 10px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    border-top: 2px solid black;
+}
+.footer img{
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
 }
 
 @media(min-width: 560px) {
