@@ -1,0 +1,130 @@
+:root{
+    --main-color: white;
+}
+
+ /*Navegación*/
+.navbar{
+    font-size: 2em;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .list{
+    display: flex;
+}
+
+.navbar .list .list-item a{
+    margin-left: 15px;
+    text-decoration: none;
+    display: none;
+}
+
+.navbar .list .list-item a, .navbar .myname{
+    color: black;
+}
+
+/*Imagen*/
+.header-image{
+    position: relative;
+    text-align: center;
+    color: white
+}
+
+.header-image .text_info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 560px;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+}
+
+/*Project*/
+#projects{
+    margin: 20px 10px;
+}
+
+/*Skills*/
+
+/*Contact Form*/
+/**.container_contact_form{
+    padding: 20px 10px;
+}**/
+.container_contact_form .form_profile{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container_contact_form .header_contact{
+    font-size: 1.5em;
+    text-decoration-line: underline;
+    padding: 10px;
+}
+/*Form Profile*/
+.container_contact_form .form_profile input{
+    margin:10px 10px;
+}
+
+/*Input radio*/
+.form_question{
+    padding: 20px 10px;
+}
+
+.form_question .container_radio_selection{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_radio_selection .radio_selection{
+    padding: 15px 0 5px 0;
+}
+
+/*Github*/
+.githubLog{
+    padding: 0px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.githubLog input{
+    margin-top: 10px;
+    width: 250px;
+}
+
+/*Description*/
+.description{
+    padding: 10px 20px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description textarea{
+    margin-top: 10px;
+    /*max-width: 250px;*/
+}
+
+/*Button Send*/
+.button_send {
+    padding: 10px 10px;
+}
+
+.button_send button{
+    padding: 5px 15px;
+}
+
+/*Footer*/
+.footer{
+    padding: 10px;
+}
+
+@media(min-width: 560px) {
+    .navbar .list .list-item a{
+        display:initial;
+    }
+    .body{
+        font-size: 1.6em;
+    }
+}

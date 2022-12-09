@@ -8,18 +8,27 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="body">
     <header class="header">
-        <div class="top">
-            <h1>Laura Gabriela Fernández Zambrano</h1>
-            <nav class="nav">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact_form">contact</a></li>
-            </nav>
-        </div>
-        <div class="my_info">
-            <picture>
+        <nav class="navbar">
+            <div  class="myName">
+                <h1>Laura Gabriela</h1>
+                <h1>Fernández Zambrano</h1>
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                     <a href="#projects">Projects</a>
+                </li>
+                <li class="list-item">
+                     <a href="#skills">Skills</a>
+                </li>
+                <li class="list-item">
+                     <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-image">
+            <picture class="image-background">
                 <img
                     sizes="(max-width: 1280px) 100vw, 1280px"
                     srcset="
@@ -36,7 +45,7 @@
             </div>
         </div>
     </header>
-   <main>
+   <main class="main">
         <section id="projects">
             <article>
                 <header>
@@ -67,39 +76,50 @@
                 <h2>Skills</h2>
             </header>
         </section>
-        <section id="contact_form">
-            <h2>Contact Form</h2>
+        <section id="contact" class="container_contact_form">
+            <h2 class="header_contact">Contact Form</h2>
             <form 
             action="registro-completado.html"
-            method="post"
+            method="post" class="form"
             >
-                <div>
+                <div class="form_profile">
                     <input name="Name" id="name" type="text" placeholder="Name" required>
                     <input name="LastName" id="lastName" type="text" placeholder="Last Name" required>
                     <input name="Email" id="mail" type="email" placeholder="email" required>
                     <input name="Phone" id="phone" type="tel" placeholder="Phone" pattern="[0-9]{9}" required>
                 </div>
-                <div>
-                    <fieldset id="form_conocer">
-                        <legend>¿Como me conociste?</legend>
-                        <input type="radio" name="conocer" id="uni" value="universidad" checked>
-                        <label for="uni">Universidad</label>
-                        <input type="radio" name="conocer" id="kc" value="keepcoding">
-                        <label for="kc">Keepcoding kick-off</label>
-                        <input type="radio" name="conocer" id="cole" value="colegio">
-                        <label for="cole">Colegio</label>
-                        <input type="radio" name="colegio" id="git" value="github">
-                        <label for="git">En Github</label>
+                <div class="form_question">
+                    <fieldset>
+                        <legend class="legend_form_question">¿Como me conociste?</legend>
+                        <div class="container_radio_selection">
+                            <div class="radio_selection">
+                                <input type="radio" name="conocer" id="uni" value="universidad" checked>
+                                <label for="uni">Universidad</label>
+                            </div>
+                            <div class="radio_selection">
+                                <input type="radio" name="conocer" id="kc" value="keepcoding">
+                                <label for="kc">Keepcoding kick-off</label>
+                            </div>
+                            <div class="radio_selection">
+                                <input type="radio" name="conocer" id="cole" value="colegio">
+                                <label for="cole">Colegio</label>
+                            </div>
+                            <div class="radio_selection">
+                                <input type="radio" name="conocer" id="git" value="github">
+                                <label for="git">En Github</label>
+                            </div>
+                        </div>
                     </fieldset>
                 </div>
-                <div>
+                <div class="githubLog">
+                    <label for="github">Introduce tu usuario de Github</label>
                     <input name="github" id="github" type="text" placeholder="Github Log" pattern="^@[^\s]+">
                 </div>
-                <div>
-                    <label for="descripcion"></label>
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" required maxlength="180"></textarea>
+                <div class="description">
+                    <label for="description">Comentarios:</label>
+                    <textarea name="description" id="description" cols="40" rows="10" required maxlength="180"></textarea>
                 </div>
-                <div>
+                <div class="button_send">
                     <button>Send</button>
                 </div>
             </form>
