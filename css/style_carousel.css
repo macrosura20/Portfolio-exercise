@@ -1,0 +1,50 @@
+.carousel_projects > h2{
+    font-size: 1.5em;
+    text-decoration-line: underline;
+    padding: 10px;
+}
+
+.carousel_links{
+    display:flex;
+    justify-content: center;
+    margin: 2px 0;
+}
+
+.carousel_dot{
+    background-color: grey;
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 50%;
+    margin: 0 5px;
+    border-color: black;
+}
+
+.carousel_slides_project{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: 20px;
+}
+
+.carousel_slides_project .articles{
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(32, 32, 44);
+}
+
+.carousel_slides_project .articles header{
+    text-align: center;
+}
+
+.carousel_slides_project .articles p{
+    margin:  0 20px;  
+}

@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_carousel.css">
     <link rel="stylesheet" href="../css/style_form.css">
 </head>
 <body class="body">
@@ -47,35 +48,70 @@
         </div>
     </header>
    <main class="main">
-        <section id="projects">
-            <article>
-                <header>
-                    <h2>Project 1</h2>
-                </header>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempore, doloribus voluptatibus illo libero
-            </article>
-            <article>
-                <header>
-                    <h2>Project 2</h2>
+        <section id="carousel_projects" class="carousel_projects">
+            <h2>Proyectos</h2>
+            <div class="carousel_slides_project">
+                <article id="project1" class="articles">
+                    <header>
+                        <h2>Project 1</h2>
+                    </header>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus iusto facilis, qui repellat.
-                    </p>
-                </header>
-            </article>
-            <article>
-                <header>
-                    <h2>Project 3</h2>
-                    <p> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aut delectus impedit obcaecati ut. 
-                    </p>
-                </header>
-            </article>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempore, doloribus voluptatibus illo libero
+                    </article>
+                <article id="project2" class="articles">
+                    <header>
+                        <h2>Project 2</h2>
+                    </header>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus iusto facilis, qui repellat.
+                        </p>
+                </article>
+                <article id="project3" class="articles">
+                    <header>
+                        <h2>Project 3</h2>
+                    </header>
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aut delectus impedit obcaecati ut. 
+                        </p>
+                </article>
+            </div>
+            <div class="carousel_links">
+                <a href="#project1" class="carousel_dot"></a>
+                <a href="#project2" class="carousel_dot"></a>
+                <a href="#project3" class="carousel_dot"></a>
+            </div>
+
         </section>
-        <section id="skills">
+        <section id="skills" class="skills">
             <header>
                 <h2>Skills</h2>
             </header>
+            <ul class="container_skills">
+                <li class="item_skills">
+                     <p>Git</p>
+                </li>
+                <li class="item_skills">
+                     <p>HTML</p>
+                </li>
+                <li class="item_skills">
+                    <p>CSS</p>
+                </li>
+                <li class="item_skills">
+                    <p>JavaScript</p>
+                </li>
+                <li class="item_skills">
+                    <p>Java</p>
+                </li>
+                <li class="item_skills">
+                    <p>Python</p>
+                </li>
+                <li class="item_skills">
+                    <p>C++</p>
+                </li>
+                <li class="item_skills">
+                    <p>C#</p>
+                </li>
+            </ul>
         </section>
         <section id="contact" class="container_contact_form">
             <h2 class="header_contact">Contact Form</h2>
@@ -118,7 +154,14 @@
                 </div>
                 <div class="description">
                     <label for="description">Comentarios:</label>
-                    <textarea name="description" id="description" cols="40" rows="10" required maxlength="180"></textarea>
+                    <textarea 
+                    name="description" 
+                    id="description" 
+                    cols="40" 
+                    rows="10" 
+                    required 
+                    maxlength="180">
+                </textarea>
                 </div>
                 <div class="button_send">
                     <button>Send</button>
@@ -138,7 +181,7 @@
             </a>
         </div>
         <div>
-            <a href="https://github.com/macrosura20">
+            <a href="https://github.com/macrosura20" target="_blank" rel="noreferrer noopener">
                 <img src="../icon/github_icon.png" alt="Github icon" width="40" height="40">
             </a>
         </div>

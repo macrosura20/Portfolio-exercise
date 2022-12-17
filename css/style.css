@@ -48,6 +48,21 @@
 }
 
 /*Skills*/
+.skills header{
+    padding: 10px;
+    font-size: 1.5em;
+    text-decoration-line: underline;
+}
+
+.skills .container_skills{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item_skills{
+    margin-right: 10px;
+}
 
 /*Footer*/
 .footer{
