@@ -8,11 +8,24 @@
 }
 .container_contact_form .header_contact{
     font-size: 1.5em;
-    text-decoration-line: underline;
     padding: 10px;
+    margin: 10px;
+    background-color: var(--background-title);
+    color: white;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+.container_contact_form .form{
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--background-form);
+    color: rgb(255, 255, 255);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 /*Form Profile*/
 .container_contact_form .form_profile input{
+    padding: 12px;
     margin:10px 10px;
 }
 
@@ -27,12 +40,12 @@
 }
 
 .container_radio_selection .radio_selection{
-    padding: 15px 0 5px 0;
+    padding: 10px 0 5px 0;
 }
 
 /*Github*/
 .githubLog{
-    padding: 0px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

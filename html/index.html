@@ -9,69 +9,88 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style_carousel.css">
     <link rel="stylesheet" href="../css/style_form.css">
+    <link rel="stylesheet" href="../css/transitions.css">
 </head>
 <body class="body">
     <header class="header">
         <nav class="navbar">
             <div  class="myName">
-                <h1>Laura Gabriela</h1>
-                <h1>Fernández Zambrano</h1>
+                <h1 >Eliana</h1>
             </div>
             <ul class="list">
                 <li class="list-item">
-                     <a href="#projects">Projects</a>
+                     <a href="#projects">Aventuras</a>
                 </li>
                 <li class="list-item">
-                     <a href="#skills">Skills</a>
+                     <a href="#skills">Habilidades</a>
                 </li>
                 <li class="list-item">
-                     <a href="#contact">Contact</a>
+                     <a href="#contact">Contacto</a>
                 </li>
             </ul>
         </nav>
         <div class="header-image">
             <picture class="image-background">
-                <img
-                    sizes="(max-width: 1280px) 100vw, 1280px"
-                    srcset="
-                    ../Images/teclado_gu4or4_c_scale,w_200.jpg 200w,
-                    ../Images/teclado_gu4or4_c_scale,w_757.jpg 757w,
-                    ../Images/teclado_gu4or4_c_scale,w_1198.jpg 1198w,
-                    ../Images/teclado_gu4or4_c_scale,w_1280.jpg 1280w"
-                    src="../Images/teclado_gu4or4_c_scale,w_1280.jpg"
-                    title="Image Profile"
-                    alt="profile icon">
+                <source
+                media="(min-width: 576px)"
+                srcset="
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_600.jpg 600w,
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_722.jpg 722w,
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_818.jpg 818w,
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_897.jpg 897w,
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_968.jpg 968w,
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_1042.jpg 1042w,
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_1178.jpg 1178w,
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_1181.jpg 1181w,
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_1189.jpg 1189w,
+                ../Images/viejo-bosque/viejo-bosque_atwcsz_c_scale,w_1200.jpg 1200w
+                "
+                >
+               <source
+               media="(max-width: 576px)"
+               srcset="
+               ../Images/viejo-bosque-mobile/viejo-bosque-mobile_q2y3qr_c_scale,w_200.jpg 200w,
+               ../Images/viejo-bosque-mobile/viejo-bosque-mobile_q2y3qr_c_scale,w_401.jpg 401w,
+               ../Images/viejo-bosque-mobile/viejo-bosque-mobile_q2y3qr_c_scale,w_542.jpg 542w,
+               ../Images/viejo-bosque-mobile/viejo-bosque-mobile_q2y3qr_c_scale,w_596.jpg 596w,
+               ../Images/viejo-bosque-mobile/viejo-bosque-mobile_q2y3qr_c_scale,w_600.jpg 600w
+               "
+                >
+                <img src="../Images/viejo-bosque.jpg" alt="Imagen de bosque">
             </picture>
             <div class="text_info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quasi placeat minima dolor repudiandae voluptatem, voluptatibus quod. Deleniti praesentium, ipsa pariatur quidem non similique voluptatem voluptatibus, suscipit voluptate, debitis aliquam?</p>
+                <p>Druida, elfa de los bosques.</p>
+                <p>Capaz de transformarse en una araña gigante o curar a los compañeros del grupo.</p>
+                <p>Puede ayudar causando daño a los enemigos como invocar un espiritu de los bosques para inspirar a los aliados.</p>
+                <a href="#contact" class="btn">Solicitud</a>
             </div>
         </div>
     </header>
    <main class="main">
-        <section id="carousel_projects" class="carousel_projects">
-            <h2>Proyectos</h2>
+        <section id="projects" class="carousel_projects">
+            <h2>Aventuras</h2>
             <div class="carousel_slides_project">
                 <article id="project1" class="articles">
                     <header>
-                        <h2>Project 1</h2>
+                        <h2>Mina Pérdida de Phandelver</h2>
                     </header>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempore, doloribus voluptatibus illo libero
+                        Ayude a eliminar una red criminal que se ocultaba en la mina del Oleaje.
                     </article>
                 <article id="project2" class="articles">
                     <header>
-                        <h2>Project 2</h2>
+                        <h2>Dragón de Pico Aguahelada</h2>
                     </header>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus iusto facilis, qui repellat.
+                          Impedí que un joven dragóndestruyera el pueblo minero de Phandelin.  
                         </p>
                 </article>
                 <article id="project3" class="articles">
                     <header>
-                        <h2>Project 3</h2>
+                        <h2>Malkorim, el mundo reliquia</h2>
                     </header>
                         <p> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aut delectus impedit obcaecati ut. 
+                         Me enfrente a un Dios Charlatán, donde se ponía en juego mi destino junto a mis compañeros.
                         </p>
                 </article>
             </div>
@@ -84,66 +103,82 @@
         </section>
         <section id="skills" class="skills">
             <header>
-                <h2>Skills</h2>
+                <h2>Habilidades</h2>
             </header>
-            <ul class="container_skills">
-                <li class="item_skills">
-                     <p>Git</p>
-                </li>
-                <li class="item_skills">
-                     <p>HTML</p>
-                </li>
-                <li class="item_skills">
-                    <p>CSS</p>
-                </li>
-                <li class="item_skills">
-                    <p>JavaScript</p>
-                </li>
-                <li class="item_skills">
-                    <p>Java</p>
-                </li>
-                <li class="item_skills">
-                    <p>Python</p>
-                </li>
-                <li class="item_skills">
-                    <p>C++</p>
-                </li>
-                <li class="item_skills">
-                    <p>C#</p>
-                </li>
-            </ul>
+            <div class="list_skills">
+                <div class="bar_1">
+                    <span class="skill">Combate Cuerpo a Cuerpo</span>
+                    <div class="bar" data-percentage="4"></div>
+                </div>
+                <div class="bar_2">
+                    <span class="skill">CambiaFormas</span>
+                    <div class="bar" data-percentage="8"></div>
+                </div>
+                <div class="bar_3">
+                    <span class="skill">Magia Elemental</span>
+                    <div class="bar" data-percentage="7"></div>
+                </div>
+                <div class="bar_4">
+                    <span class="skill">Magia Curativa</span>
+                    <div class="bar" data-percentage="6"></div>
+                </div>
+                <div class="bar_5">
+                    <span class="skill">Herbología</span>
+                    <div class="bar" data-percentage="9"></div>
+                </div>
+                <div class="bar_6">
+                    <span class="skill">Naturaleza</span>
+                    <div class="bar" data-percentage="8"></div>
+                </div>
+                <div class="bar_7">
+                    <span class="skill">Destreza</span>
+                    <div class="bar" data-percentage="7"></div>
+                </div>
+                <div class="bar_8">
+                    <span class="skill">Carisma</span>
+                    <div class="bar" data-percentage="5"></div>
+                </div>
+                <div class="bar_9">
+                    <span class="skill">Hablar con criaturas no humana</span>
+                    <div class="bar" data-percentage="7"></div>
+                </div>
+                <div class="bar_10">
+                    <span class="skill">Percepción</span>
+                    <div class="bar" data-percentage="9"></div>
+                </div>
+            </div>
         </section>
         <section id="contact" class="container_contact_form">
-            <h2 class="header_contact">Contact Form</h2>
+            <h2 class="header_contact">Contacto</h2>
             <form 
             action="registro-completado.html"
             method="post" class="form"
             >
                 <div class="form_profile">
-                    <input name="Name" id="name" type="text" placeholder="Name" required>
-                    <input name="LastName" id="lastName" type="text" placeholder="Last Name" required>
+                    <input name="Name" id="name" type="text" placeholder="Nombre" required>
+                    <input name="Group" id="group" type="text" placeholder="Nombre del Grupo" required>
                     <input name="Email" id="mail" type="email" placeholder="email" required>
-                    <input name="Phone" id="phone" type="tel" placeholder="Phone" pattern="[0-9]{9}" required>
+                    <input name="Phone" id="phone" type="tel" placeholder="Teléfono" pattern="[0-9]{9}" required>
                 </div>
                 <div class="form_question">
                     <fieldset>
                         <legend class="legend_form_question">¿Como me conociste?</legend>
                         <div class="container_radio_selection">
                             <div class="radio_selection">
-                                <input type="radio" name="conocer" id="uni" value="universidad" checked>
-                                <label for="uni">Universidad</label>
+                                <input type="radio" name="conocer" id="discord" value="discord" checked>
+                                <label for="discord">Discord</label>
                             </div>
                             <div class="radio_selection">
-                                <input type="radio" name="conocer" id="kc" value="keepcoding">
-                                <label for="kc">Keepcoding kick-off</label>
+                                <input type="radio" name="conocer" id="neverwinter" value="neverwinter">
+                                <label for="neverwinter">Tablón de anuncio en Neverwinter</label>
                             </div>
                             <div class="radio_selection">
-                                <input type="radio" name="conocer" id="cole" value="colegio">
-                                <label for="cole">Colegio</label>
+                                <input type="radio" name="conocer" id="guild" value="guild">
+                                <label for="guild">Gremio de Mercenarios</label>
                             </div>
                             <div class="radio_selection">
-                                <input type="radio" name="conocer" id="git" value="github">
-                                <label for="git">En Github</label>
+                                <input type="radio" name="conocer" id="druid" value="druid">
+                                <label for="¡druid">Circulos de los Druidas</label>
                             </div>
                         </div>
                     </fieldset>

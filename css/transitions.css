@@ -1,0 +1,222 @@
+/*Skills*/
+.skills header{
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--background-title);
+    color: white;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+.list_skills{
+    padding: 10px;
+}
+/* Bar Graph Horizontal */
+.list_skills .skill {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    opacity: 0;
+    padding: 10px 10px;
+    margin: 15px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(111, 190, 131);
+}
+ 
+.list_skills div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 10px;
+    background-color: rgb(22, 29, 22);
+}
+  
+ .list_skills .bar{
+    border-radius: 6px;
+    height: 40px;
+    margin-left: 30px;
+    
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+  }
+  
+  .list_skills .bar::after {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    color: #fff;
+    content: attr(data-percentage);
+    font-weight: 700;
+    position: absolute;
+    justify-self: center;
+    right: 16px;
+    top: 15px;
+  }
+  
+  .list_skills .bar_1 .bar {
+    background-color: #AD8B73;
+    -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one 1.2s 0.1s forwards;
+    animation: show-bar-one 1.2s 0.1s forwards;
+  }
+  
+  .list_skills .bar_2 .bar {
+    background-color: rgb(206, 171, 147);
+    -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two 1.2s 0.2s forwards;
+    animation: show-bar-two 1.2s 0.2s forwards;
+  }
+  
+  .list_skills .bar_3 .bar {
+    background-color: #E3CAA5;
+    -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three 1.2s 0.3s forwards;
+    animation: show-bar-three 1.2s 0.3s forwards;
+  }
+  
+  .list_skills .bar_4 .bar {
+    background-color: #AD8B73;
+    -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four 1.2s 0.4s forwards;
+    animation: show-bar-four 1.2s 0.4s forwards;
+  }
+  .list_skills .bar_5 .bar {
+    background-color:rgb(206, 171, 147);
+    -webkit-animation: show-bar-five 1.2s 0.5s forwards;
+    -moz-animation: show-bar-five 1.2s 0.5s forwards;
+    animation: show-bar-five 1.2s 0.5s forwards;
+  }
+  .list_skills .bar_6 .bar {
+    background-color: #E3CAA5;
+    -webkit-animation: show-bar-six 1.2s 0.6s forwards;
+    -moz-animation: show-bar-six 1.2s 0.6s forwards;
+    animation: show-bar-six 1.2s 0.6s forwards;
+  }
+  .list_skills .bar_7 .bar {
+    background-color: #AD8B73;
+    -webkit-animation: show-bar-seven 1.2s 0.7s forwards;
+    -moz-animation: show-bar-seven 1.2s 0.7s forwards;
+    animation: show-bar-seven 1.2s 0.7s forwards;
+  }
+  .list_skills .bar_8 .bar {
+    background-color: rgb(206, 171, 147);
+    -webkit-animation: show-bar-eight 1.2s 0.8s forwards;
+    -moz-animation: show-bar-eight 1.2s 0.8s forwards;
+    animation: show-bar-eight 1.2s 0.8s forwards;
+  }
+  .list_skills .bar_9 .bar {
+    background-color: #E3CAA5;
+    -webkit-animation: show-bar-nine 1.2s 0.9s forwards;
+    -moz-animation: show-bar-nine 1.2s 0.9s forwards;
+    animation: show-bar-nine 1.2s 0.9s forwards;
+  }
+  .list_skills .bar_10 .bar {
+    background-color: #AD8B73;
+    -webkit-animation: show-bar-ten 1.2s 1s forwards;
+    -moz-animation: show-bar-ten 1.2s 1s forwards;
+    animation: show-bar-ten 1.2s 1s forwards;
+  }
+  /* Bar Graph Horizontal Animations */
+  @-webkit-keyframes show-bar-one {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 40%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-two {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-three {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-four {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+
+  @-webkit-keyframes show-bar-five {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  @-webkit-keyframes show-bar-six {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 80%;
+    }
+  }
+
+  @-webkit-keyframes show-bar-seven {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+  @-webkit-keyframes show-bar-eight {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+
+  @-webkit-keyframes show-bar-nine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+
+  @-webkit-keyframes show-bar-ten {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 90%;
+    }
+  }
+  
+  @-webkit-keyframes fade-in-text {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

@@ -1,7 +1,11 @@
+
 .carousel_projects > h2{
     font-size: 1.5em;
-    text-decoration-line: underline;
     padding: 10px;
+    background-color: var(--background-title);
+    color: white;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
 }
 
 .carousel_links{
@@ -11,23 +15,28 @@
 }
 
 .carousel_dot{
-    background-color: grey;
+    background-color: rgb(136, 176, 136);
     width: 16px;
     height: 16px;
     display: block;
     border-radius: 50%;
     margin: 0 5px;
-    border-color: black;
+    border: 3px solid rgb(0, 0, 0);
+    transition: background-color 0s linear;
+}
+.carousel_dot:hover{
+    background-color: rgb(18, 160, 30);
+    cursor: pointer;
 }
 
 .carousel_slides_project{
-    height: 20vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     overflow: hidden;
     scroll-behavior: smooth;
-    margin: 20px;
+    margin: 5px 20px;
 }
 
 .carousel_slides_project .articles{
@@ -38,13 +47,32 @@
     justify-content:space-evenly;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: rgb(32, 32, 44);
+    
 }
-
+#project1{
+    background-image:url("../Images/carousel/Minas_Perdidas_de_Phandelver.webp");
+    background-size: cover;
+}
+#project2{
+    background-image: url("../Images/carousel/dragon_aguahelada.jpg");
+    background-size: cover;
+}
+#project3{
+    background-image: url("../Images/carousel/malkorim.webp");
+    background-size: cover;
+}
 .carousel_slides_project .articles header{
     text-align: center;
+    padding:  10px 20px;
+    margin: 10px 20px;
+    background-color: black; 
+    opacity: 80%;
 }
 
 .carousel_slides_project .articles p{
-    margin:  0 20px;  
+    padding:  5px 20px;
+    margin:  0 20px;
+    text-align: center;
+    background-color: black; 
+    opacity: 80%;
 }
