@@ -1,0 +1,102 @@
+:root{
+    --background-color: rgb(20, 57, 33);
+    --background-title: rgb(31, 154, 62);
+    --background-form:rgb(102, 146, 102);
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--background-color);
+}
+
+.header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .title{
+    font-size: 1.5em;
+    color: white;
+    padding: 5px 15px;
+    background-color: var(--background-title);
+    border: 4px solid black;
+}
+.header img{
+    background-color: var(--background-title);
+    border: 4px solid black;
+}
+.video{
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.grid_title{
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--background-title);
+    color: white;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+.aventuras_item{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    padding-top: 5px;
+    
+}
+.aventuras_item div{
+    padding: 40px;
+    border: 4px solid black;
+    background-size: cover;
+}
+
+.aventuras_item p{
+    padding: 2px;
+    background-color: black; 
+    opacity: 80%;
+    color: white;
+}
+
+.aventura1{
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(../Images/carousel/Minas_Perdidas_de_Phandelver.webp);
+}
+.aventura2{
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(../Images/carousel/rey_de_la\ tormenta.jpg);
+}
+.aventura3{
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(../Images/carousel/dragon_aguahelada.jpg);
+}
+.aventura4{
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(../Images/carousel/malkorim.webp);
+}
+.aventura5{
+    grid-area: 3 / 1 / 4 / 2;
+    background-image: url(../Images/carousel/PuertaBaldur.jpg);
+}
+.aventura6{
+    grid-area: 3 / 2 / 4 / 3; 
+    background-image: url(../Images/carousel/waterdeep.jpg);
+}

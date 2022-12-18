@@ -65,26 +65,7 @@
     background-color: rgb(87, 116, 58);
 }
 
-/*Project*/
-#projects{
-    margin: 20px 10px;
-}
 
-
-/*Footer*/
-.footer{
-    padding: 10px ;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #F0F2B6;
-    border-top: 2px solid black;
-}
-.footer img{
-    border: 2px solid black;
-    border-radius: 50%;
-    background-color: white;
-}
 
 @media(min-width: 560px) {
     .navbar .list .list-item a{
